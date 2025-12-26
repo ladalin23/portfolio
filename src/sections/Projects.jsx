@@ -1,12 +1,16 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton"; 
+import Pos_image from '../assets/images/projects/pos-system.png';
+import Real_Estate from '../assets/images/projects/real-estate.png';
+import Educ_Library from '../assets/images/projects/education-library.png';
+import E_book from '../assets/images/projects/ebook-website.png';
 
 const projects = [
   {
     title: "POS Management System",
     description:
       "A complete point-of-sale system designed for retail businesses, featuring sales processing, inventory control, invoice generation, and role-based user access.",
-    image: "/projects/pos-system.png",
+    image: Pos_image,
     tags: ["Laravel", "CSS", "Bootstrap", "jQuery", "MySQL"],
     link: "#",
     github: "#",
@@ -15,7 +19,7 @@ const projects = [
     title: "Real Estate Platform",
     description:
       "A web-based platform for managing property listings, agents, and client inquiries with advanced filtering, dashboards, and admin controls.",
-    image: "/projects/real-estate.png",
+    image: Real_Estate,
     tags: ["Laravel", "Bootstrap", "CSS", "jQuery", "React", "REST API", "MariaDB"],
     link: "#",
     github: "#",
@@ -24,7 +28,7 @@ const projects = [
     title: "Digital Library Platform",
     description:
       "A secure digital library system built for educational institutions, enabling students and teachers to access academic e-books and manage learning resources.",
-    image: "/projects/education-library.png",
+    image: Educ_Library,
     tags: ["Laravel", "CSS", "Bootstrap", "jQuery", "MySQL"],
     link: "#",
     github: "#",
@@ -33,7 +37,7 @@ const projects = [
     title: "E-Book Publishing Website",
     description:
       "A modern e-book website that allows authors to publish digital books while users can browse, preview, and download content online.",
-    image: "/projects/ebook-website.png",
+    image: E_book,
     tags: ["Laravel", "React", "CSS", "Bootstrap", "jQuery", "MySQL"],
     link: "#",
     github: "#",

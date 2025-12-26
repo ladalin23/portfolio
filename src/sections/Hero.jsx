@@ -1,6 +1,8 @@
 import { Button } from "../components/Button";
 import { ArrowRight, ChevronDown, Github, Linkedin, Twitter, Download, } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton"; 
+import profile_image from '../assets/images/profile-photo.jpg';
+import hero_bg from '../assets/images/hero-bg.jpg';
 
 const skills = [ "Laravel", "PHP", "Bootstrap", "React", "TypeScript", "MongoDB", "Figma", "Git", "GitHub", "Postman" ];
 
@@ -10,7 +12,7 @@ export const Hero = () => {
       {/* Background */}
       <div className="position-absolute top-0 start-0 w-100 h-100">
         <img
-          src="/hero-bg.jpg"
+          src={hero_bg}
           alt="Hero background"
           style={{ width: "100%", height: "100%", objectFit: "cover", opacity: '90%', }}
         />
@@ -93,7 +95,7 @@ export const Hero = () => {
 
               <div className="profile-card">
                 <img
-                  src="/profile-photo.jpg"
+                  src={profile_image}
                   alt="Pedro Machado"
                   className="profile-image"
                 />
