@@ -1,0 +1,41 @@
+
+/* Optional font-serif class */
+.font-serif { font-family: 'Georgia', serif; }
+
+/* z-index for container */
+.z-1 { z-index: 10; }
+
+.bg-primary {
+  background-color: color-mix(in oklab, var(--color-primary) 10%, transparent) !important;
+}
+
+.bg-primary:hover {
+  background-color: color-mix(in oklab, var(--color-primary) 20%, transparent) !important;
+}
+
+.border-primary-soft {
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+/* Sizes */
+.btn-custom.btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; } 
+.btn-custom.btn-default { padding: 0.75rem 1.5rem; font-size: 1rem; } 
+.btn-custom.btn-lg { padding: 1rem 2rem; font-size: 1.125rem; } 
+.btn-custom.btn-lg { padding: 1rem 2rem; font-size: 1.125rem; } 
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+.delay-500 { animation-delay: 500ms; }
+.delay-800 {
+  animation-delay: 0.8s;
+}
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.text-muted {
+    color: #6b7280 !important;
+}

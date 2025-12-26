@@ -1,0 +1,97 @@
+import { Button } from "../components/Button";
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import '../assets/css/layout.css'
+
+const navLinks = [
+  { href: "#about", label: "About" },
+  { href: "#projects", label: "Projects" },
+  { href: "#experience", label: "Experience" },
+];
+
+export const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <header className={`main-header ${isScrolled ? "header-scrolled" : ""}`} >
+        <nav className="navbar navbar-expand-md">
+            <div className="container-fluid px-3">
+
+            {/* Logo */}
+            <a className="navbar-brand fw-bold" href="#">
+                PM<span className="text-primary">.</span>
+            </a>
+
+            {/* Mobile Toggle */}
+            <button
+                className="navbar-toggler border-0"
+                type="button"
+                onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+            >
+                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+
+            {/* Desktop Menu */}
+            <div className="collapse navbar-collapse d-none d-md-flex justify-content-center">
+                <div className="glass d-flex align-items-center gap-1 px-2 py-1 rounded-pill">
+                {navLinks.map((link, index) => (
+                    <a
+                    key={index}
+                    href={link.href}
+                    className="nav-link-custom"
+                    >
+                    {link.label}
+                    </a>
+                ))}
+                </div>
+            </div>
+
+            {/* CTA Button (Desktop) */}
+            <div className="d-none d-md-block">
+                <Button size="sm">
+                    <a href="#contact" className="text-decoration-none text-white" >
+                        Contact Me
+                    </a>
+                </Button>
+            </div>
+            </div>
+        </nav>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+            <div className="mobile-menu animate-fade">
+            <div className="container py-4 d-flex flex-column gap-3">
+                {navLinks.map((link, index) => (
+                <a
+                    key={index}
+                    href={link.href}
+                    className="mobile-link"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                >
+                    {link.label}
+                </a>
+                ))}
+
+                <button
+                className="btn btn-primary"
+                onClick={() => setIsMobileMenuOpen(false)}
+                >
+                Contact Me
+                </button>
+            </div>
+            </div>
+        )}
+    </header>
+  );
+};
