@@ -49,9 +49,9 @@ export const Contact = () => {
     setIsLoading(true);
     setSubmitStatus({ type: null, message: "" });
     try {
-      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+      const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+      const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+      const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
       if (!serviceId || !templateId || !publicKey) {
         throw new Error(
@@ -64,8 +64,9 @@ export const Contact = () => {
         templateId,
         {
           name: formData.name,
-          email: formData.email,
+          email: "lin280454@gmail.com",
           message: formData.message,
+          reply_to: formData.email
         },
         publicKey
       );
@@ -119,8 +120,12 @@ export const Contact = () => {
                   <label className="form-label">Name</label>
                   <input
                     type="text"
-                    className="form-control custom-input"
+                    className="form-control custom-input placeholder-color"
                     placeholder="Your name..."
+                    value={formData.name}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
                     required
                   />
                 </div>
@@ -129,8 +134,12 @@ export const Contact = () => {
                   <label className="form-label">Email</label>
                   <input
                     type="email"
-                    className="form-control custom-input"
+                    className="form-control custom-input placeholder-color"
                     placeholder="your@email.com"
+                    value={formData.email}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
                     required
                   />
                 </div>
@@ -139,8 +148,12 @@ export const Contact = () => {
                   <label className="form-label">Message</label>
                   <textarea
                     rows="5"
-                    className="form-control custom-input"
+                    className="form-control custom-input placeholder-color"
                     placeholder="Your message..."
+                    value={formData.message}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                     required
                   ></textarea>
                 </div>

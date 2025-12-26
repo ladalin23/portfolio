@@ -46,7 +46,7 @@ export const Hero = () => {
           {/* Left */}
           <div className="col-lg-6">
 
-            <span class="d-inline-flex align-items-center my-4 gap-2 px-3 py-2 rounded-pill text-primary glass" style={{fontSize: '0.9rem',}}>
+            <span className="d-inline-flex align-items-center my-4 gap-2 px-3 py-2 rounded-pill text-primary glass" style={{fontSize: '0.9rem',}}>
               <span className="pulse-dot"></span>
               Software Engineer
             </span>

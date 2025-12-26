@@ -3,9 +3,9 @@ import '../assets/css/component.css';
 
 export const AnimatedBorderButton = ({ children, size = "md", }) => {
   return (
-    <button class="btn-animated position-relative overflow-visible rounded-pill px-4 py-3 text-lg">
+    <button className="btn-animated position-relative overflow-visible rounded-pill px-4 py-3 text-lg">
       <svg
-        class="position-absolute top-0 start-0 w-100 h-100 pointer-events-none download-cv-border"
+        className="position-absolute top-0 start-0 w-100 h-100 pointer-events-none download-cv-border"
         viewBox="0 0 200 60"
         preserveAspectRatio="none"
         style={{overflow: 'visible'}}
@@ -19,11 +19,11 @@ export const AnimatedBorderButton = ({ children, size = "md", }) => {
           stroke-dashoffset="400"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="animated-border-path"
+          className="animated-border-path"
         />
       </svg>
 
-      <span class="position-relative z-10 d-flex justify-content-center align-items-center gap-2">
+      <span className="position-relative z-10 d-flex justify-content-center align-items-center gap-2">
         {children}
       </span>
     </button>
