@@ -13,7 +13,7 @@ const ProjectDetailPage = ({ project }) => {
       <section className="project-detail col-8 mt-5 py-5 position-relative overflow-hidden" >
         <div className="row">
           <div className="col-2">
-              <a href="/projects" className="d-flex align-items-center text-decoration-none text-white rounded-3 pe-3 btn-arrow "  ><ChevronLeft />All Experience</a>
+              <a href="/portfolio/projects" className="d-flex align-items-center text-decoration-none text-white rounded-3 pe-3 btn-arrow "  ><ChevronLeft />All Experience</a>
           </div>
           <div className='col-8'>
             <div className="mb-2">

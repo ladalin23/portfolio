@@ -74,7 +74,7 @@ export const Projects = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <a href="/projects">
+          <a href="/portfolio/projects">
             <AnimatedBorderButton>
               View All Projects
               <ArrowUpRight style={{ width: "1.25rem", height: "1.25rem" }} />
