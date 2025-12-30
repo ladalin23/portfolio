@@ -1,21 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7ff3654f.css",
-    "main.js": "/portfolio/static/js/main.ddbf4e55.js",
+    "main.css": "/portfolio/static/css/main.80e1a914.css",
+    "main.js": "/portfolio/static/js/main.855e989a.js",
     "static/js/453.0ab381f6.chunk.js": "/portfolio/static/js/453.0ab381f6.chunk.js",
+    "static/media/PropertyPage.png": "/portfolio/static/media/PropertyPage.afee701b2777c4454040.png",
     "static/media/real-estate.png": "/portfolio/static/media/real-estate.37eb3fd5784f03524651.png",
+    "static/media/HomePage.png": "/portfolio/static/media/HomePage.aefd99109e113c0b3892.png",
+    "static/media/MainImageEBook.png": "/portfolio/static/media/MainImageEBook.406721448bd8c1a45d70.png",
+    "static/media/MainImage.png": "/portfolio/static/media/MainImage.2b5788e27bc403691b5f.png",
+    "static/media/MainImagePOS.png": "/portfolio/static/media/MainImagePOS.c4146498bbf545df8cc2.png",
+    "static/media/MainIMageLibrary.png": "/portfolio/static/media/MainIMageLibrary.48e4b9a5634978587a46.png",
     "static/media/education-library.png": "/portfolio/static/media/education-library.2faf100c50ea6a4ca101.png",
     "static/media/ebook-website.png": "/portfolio/static/media/ebook-website.8c11d733bc54946f83f4.png",
+    "static/media/TypePage.png": "/portfolio/static/media/TypePage.2bcf82a0c9665fbfde43.png",
+    "static/media/AboutPage.png": "/portfolio/static/media/AboutPage.8279454f9f537708a348.png",
+    "static/media/ContactPage.png": "/portfolio/static/media/ContactPage.0f7d812a38e7159b6931.png",
+    "static/media/Dashboard.png": "/portfolio/static/media/Dashboard.9b260554473c99b374be.png",
     "static/media/pos-system.png": "/portfolio/static/media/pos-system.e96bd7aa117f2e5d3768.png",
     "static/media/hero-bg.jpg": "/portfolio/static/media/hero-bg.301c5d1debd3ca262902.jpg",
     "static/media/profile-photo.jpg": "/portfolio/static/media/profile-photo.bc49c5285109c0e80567.jpg",
     "index.html": "/portfolio/index.html",
-    "main.7ff3654f.css.map": "/portfolio/static/css/main.7ff3654f.css.map",
-    "main.ddbf4e55.js.map": "/portfolio/static/js/main.ddbf4e55.js.map",
+    "main.80e1a914.css.map": "/portfolio/static/css/main.80e1a914.css.map",
+    "main.855e989a.js.map": "/portfolio/static/js/main.855e989a.js.map",
     "453.0ab381f6.chunk.js.map": "/portfolio/static/js/453.0ab381f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ff3654f.css",
-    "static/js/main.ddbf4e55.js"
+    "static/css/main.80e1a914.css",
+    "static/js/main.855e989a.js"
   ]
 }
