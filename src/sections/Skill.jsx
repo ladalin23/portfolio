@@ -44,7 +44,7 @@ export const Skills = () => {
         </Row>
 
         <div className="text-center mt-5">
-          <a href="/portfolio/skills">
+          <a href="/skills">
             <AnimatedBorderButton>
               View All Skill
               <ArrowUpRight style={{ width: "1.25rem", height: "1.25rem" }} />

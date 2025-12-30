@@ -19,11 +19,11 @@ function App() {
           <Routes>
               <Route index element={<HomePage /> } />
               <Route path='/portfolio' element={<HomePage /> } />
-              <Route path='/portfolio/abouts' element={<AboutPage /> } />
-              <Route path='/portfolio/projects' element={<ProjectPage /> } />
-              <Route path='/portfolio/skills' element={<SkillPage /> } />
-              <Route path='/portfolio/contact' element={<ContactPage /> } />
-              <Route path='/portfolio/project-detail' element={<ProjectDetailPage /> } />
+              <Route path='/abouts' element={<AboutPage /> } />
+              <Route path='/projects' element={<ProjectPage /> } />
+              <Route path='/skills' element={<SkillPage /> } />
+              <Route path='/contact' element={<ContactPage /> } />
+              <Route path='/project-detail' element={<ProjectDetailPage /> } />
           </Routes>
       </main>
       <Footer />
