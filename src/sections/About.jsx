@@ -2,7 +2,7 @@ import { highlights } from "../data/PortfolioData";
 
 export const About = () => {
   return (
-    <section id="about" className="about-section py-5 position-relative overflow-hidden">
+    <section id="abouts" className="about-section py-5 position-relative overflow-hidden">
       <div className="container-fluid position-relative z-1 px-4">
         <div className="row align-items-center gx-5">
           {/* Left Column */}

@@ -1,6 +1,6 @@
 
 import { Code2, Lightbulb, Rocket, Users } from "lucide-react"; 
-import { SiLaravel, SiReact, SiMongodb, SiTypescript, SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiMysql } from "react-icons/si";
+import { SiLaravel, SiReact, SiNuxtdotjs, SiTypescript, SiJavascript, SiHtml5, SiPostman, SiGithub, SiSwagger, SiCss3, SiBootstrap, SiMysql } from "react-icons/si";
 import Pos_image from '../assets/images/projects/pos-system.png';
 import Real_Estate from '../assets/images/projects/real-estate.png';
 import Educ_Library from '../assets/images/projects/education-library.png';
@@ -15,6 +15,7 @@ import ContactPage from '../assets/images/projectDetail/Real Estate/ContactPage.
 import Dashboard from '../assets/images/projectDetail/Real Estate/Dashboard.png';
 //pos image
 import MainImagePOS from '../assets/images/projectDetail/POS/MainImagePOS.png';
+import DashboardPOS from '../assets/images/projectDetail/POS/Dashboard.png';
 //library image
 import MainImageLibrary from '../assets/images/projectDetail/Library/MainIMageLibrary.png';
 //libray Image
@@ -62,6 +63,32 @@ export const skillsData = [
     desc: "Craft interactive user interfaces using components, state, props, and virtual DOM.",
     icon: <SiReact />, 
     star: 5,
+  },
+  {
+    title: "Nuxt",
+    desc: "Build universal Vue applications with server-side rendering, static sites, and powerful module ecosystem.",
+    icon: <SiNuxtdotjs />, 
+    star: 5,
+  },
+  {
+    title: "Postman",
+    desc: "Test, debug, and document APIs efficiently with collections, environments, and automated testing.",
+    icon: <SiPostman />,
+  },
+  {
+    title: "GitHub",
+    desc: "Host, manage, and collaborate on code repositories using version control with Git.",
+    icon: <SiGithub />,
+  },
+  {
+    title: "REST API",
+    desc: "Design and consume RESTful APIs to enable communication between client and server applications.",
+    icon: <SiSwagger />,
+  },
+  {
+    title: "Database Design",
+    desc: "Model, structure, and normalize data efficiently for relational and NoSQL databases.",
+    icon: <SiMysql />,
   },
   {
     title: "Javascript",
@@ -114,7 +141,7 @@ export const projects = [
            <p>I developed this system using the Laravel framework, leveraging its MVC (Model-View-Controller) architecture to ensure the code is organized, scalable, and secure. By utilizing Eloquent ORM, I designed a sophisticated relational database to manage product stocks, categories, and transaction histories. For the interface, I used Blade templating, focusing on creating a clean, responsive layout that allows users to navigate the sales and inventory modules with ease.</p>
            <p>This assignment allowed me to master core backend concepts, such as Middleware for security, Form Validation, and Session Management. I went beyond the basic requirements by implementing an Automated Invoice Generation feature and a centralized Admin Dashboard that tracks daily revenue and low-stock alerts, demonstrating my ability to build a complete business solution from the ground up.</p>`,
     MainImage: MainImagePOS,
-    images: [],
+    images: [DashboardPOS],
     link: "#",
     github: "#",
   },

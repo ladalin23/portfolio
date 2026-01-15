@@ -15,7 +15,7 @@ export const Skills = () => {
         </div>
 
         <Row className="g-4">
-          {skillsData.map((skill, index) => (
+          {skillsData.slice(0, 6).map((skill, index) => (
             <Col key={index} lg={4} md={6}>
               <Card className="skill-card h-100 border-0">
                 <Card.Body className="p-4">
@@ -35,14 +35,14 @@ export const Skills = () => {
           ))}
         </Row>
 
-        {/* <div className="text-center mt-5">
+        <div className="text-center mt-5">
           <a href="/skills">
             <AnimatedBorderButton>
               View All Skill
               <ArrowUpRight style={{ width: "1.25rem", height: "1.25rem" }} />
             </AnimatedBorderButton>
           </a>
-        </div> */}
+        </div>
     </section>
   );
 };

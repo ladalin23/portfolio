@@ -38,7 +38,7 @@ export const Projects = () => {
 
         {/* Projects Grid */}
         <div className="row g-4">
-          {projects.map((project, idx) => (
+          {projects.slice(0,2).map((project, idx) => (
             <div className="col-md-6" key={idx}>
               <div className="group glass rounded-3 overflow-hidden fade-in p-3 pt-4" style={{ animationDelay: `${(idx + 1) * 100}ms` }} >
                 {/* Image */}
@@ -74,11 +74,11 @@ export const Projects = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <a href="ortfolio/projects">
-            {/* <AnimatedBorderButton>
+          <a href="/projects">
+            <AnimatedBorderButton>
               View All Projects
               <ArrowUpRight style={{ width: "1.25rem", height: "1.25rem" }} />
-            </AnimatedBorderButton> */}
+            </AnimatedBorderButton>
           </a>
         </div>
       </div>

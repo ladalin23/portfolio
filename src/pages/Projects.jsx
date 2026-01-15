@@ -54,7 +54,7 @@ const ProjectPage = () => {
                 <div className="p-4">
                   <div className="d-flex justify-content-between align-items-start mb-2">
                     <h3 className="h5 fw-semibold project-title">{project.title}</h3>
-                    <FiArrowRight size={20} className="project-arrow"  />
+                    <FiArrowRight size={20} className="project-arrow" onClick={()=> showProjectDetail(project)}  />
                   </div>
                   <p className="text-muted small">{project.description}</p>
                   <div className="d-flex flex-wrap gap-2">

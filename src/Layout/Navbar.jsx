@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import '../assets/css/layout.css'
 
 const navLinks = [
-  { href: "#abouts", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "/abouts", label: "About" },
+  { href: "/skills", label: "Skills" },
+  { href: "/projects", label: "Projects" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export const Navbar = () => {
