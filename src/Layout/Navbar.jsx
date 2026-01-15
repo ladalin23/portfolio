@@ -30,7 +30,7 @@ export const Navbar = () => {
             <div className="container-fluid px-3">
 
             {/* Logo */}
-            <a className="navbar-brand fw-bold" href="/portfolio">
+            <a className="navbar-brand fw-bold" href="/">
                 LA DALIN<span className="text-primary">.</span>
             </a>
 
