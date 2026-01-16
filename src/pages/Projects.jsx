@@ -70,7 +70,6 @@ const ProjectPage = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
