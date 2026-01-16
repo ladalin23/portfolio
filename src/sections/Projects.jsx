@@ -67,7 +67,8 @@ export const Projects = () => {
 
                     <FiArrowRight
                       size={20}
-                      className="project-arrow cursor-pointer" 
+                      className="project-arrow cursor-pointer"
+                      onClick={() => showProjectDetail(project)}
                       role="button"
                       aria-label="View project details"
                     />

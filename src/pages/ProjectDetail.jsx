@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaStar } from "react-icons/fa";
-import { Container, Row, Col, Badge } from 'react-bootstrap'; 
+import { Badge } from 'react-bootstrap'; 
 import { useLocation } from 'react-router-dom';
 import profile from '../assets/images/profile-photo.jpg';
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 
 const ProjectDetailPage = ({ project }) => {
   const { state } = useLocation();

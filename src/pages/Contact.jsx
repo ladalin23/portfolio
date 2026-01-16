@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, } from "lucide-react";
+
 import { useState } from "react"; 
 import emailjs from "@emailjs/browser";
 import { contactInfo } from "../data/PortfolioData";

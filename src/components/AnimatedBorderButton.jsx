@@ -1,4 +1,4 @@
-import { Download } from "lucide-react";
+
 import '../assets/css/component.css';
 
 export const AnimatedBorderButton = ({ children, size = "md", }) => {
