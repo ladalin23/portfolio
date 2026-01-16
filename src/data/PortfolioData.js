@@ -111,19 +111,6 @@ export const projects = [
     link: "#",
     github: "#",
   },
-  {
-    title: "Pureclean Laundry",
-    nameProject: "Pureclean Laundry",
-    tagPlateform: ["Web App", "Front-end", "UI/UX"],
-    description: "A high-performance front-end web application for laundry services...",
-    image: PureCleanWebapp,
-    tags: ["Nuxt.js", "Vue.js", "Tailwind CSS", "Vuetify", "JavaScript"],
-    desc: `<p>I developed the front-end of the Pureclean Laundry web application...</p>`,
-    MainImage: MainImagePureClean,
-    images: [PureCleanWebapp, QRPage, RewardPage, ProfilePage],
-    link: "#",
-    github: "#",
-  },
 ];
 
 // Experiences Section

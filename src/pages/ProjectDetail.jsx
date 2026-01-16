@@ -73,39 +73,23 @@ const ProjectDetailPage = ({ project }) => {
               </div>
             </section>
             {/* Page Info / Gallery Section */}
-            {projectDetail?.images?.length > 0 && (
               <section>
-                <h2 className="h4 fw-bold mb-2">Page Info</h2>
-
-                <div className="mb-4 mt-5">
-                  <h3 className="h5 d-flex align-items-center text-white gap-2">
-                    <FaStar className="text-white" /> Landing Page
-                  </h3>
-                  <p
-                    className="text-white mt-3"
-                    style={{ fontSize: '1.1rem' }}
-                  >
-                    High-converting and sleek landing page designed for property discovery and lead generation.
-                  </p>
-                </div>
-
+              <h2 className="h4 fw-bold mb-2">Page Info</h2>
+              <div className="mb-4 mt-5">
+                <h3 className="h5 d-flex align-items-center text-white gap-2">
+                  <FaStar className="text-white" /> Landing Page
+                </h3>
+                <p className="text-white mt-3" style={{ fontSize: '1.1rem' }}>High-converting and sleek landing page designed for property discovery and lead generation.</p>
+              </div>
                 {/* Screenshots Stack */}
                 <div className="d-flex flex-column gap-4">
-                  {projectDetail.images.map((projectImage, index) => (
-                    <div
-                      key={index}
-                      className="glass-card p-2 rounded-3 d-flex justify-content-center"
-                    >
-                      <img
-                        src={projectImage}
-                        className="img-fluid rounded-2"
-                        alt="Landing"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
+                {projectDetail.images.map((projectImage, index) => (
+                  <div className="glass-card p-2 rounded-3 d-flex justify-content-center">
+                    <img key={index} src={projectImage} className="img-fluid rounded-2" alt="Landing" />
+                  </div>
+                ))}
+              </div>
+            </section>
           </div>
         </div>
       </section>
