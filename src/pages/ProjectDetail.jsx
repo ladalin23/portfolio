@@ -100,9 +100,7 @@ const ProjectDetailPage = () => {
             <p dangerouslySetInnerHTML={{ __html: projectDetail.desc }} />
           </div>
         </section>
-
-        {/* Page Info / Gallery */}
-        {projectDetail.images?.length > 0 && (
+ 
           <section>
             <h2 className="h4 fw-bold mb-2">Page Info</h2>
             <div className="mb-4 mt-3">
@@ -122,8 +120,7 @@ const ProjectDetailPage = () => {
                 </div>
               ))}
             </div>
-          </section>
-        )}
+          </section> 
       </section>
     </div>
   );
