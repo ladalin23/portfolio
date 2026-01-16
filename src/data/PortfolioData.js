@@ -24,6 +24,9 @@ import MainImageEBook from '../assets/images/projectDetail/E-Book/MainImageEBook
 //pureclean Image
 import PureCleanWebapp from '../assets/images/projectDetail/Pureclean/HomePage.png';
 import MainImagePureClean from '../assets/images/projectDetail/Pureclean/MainImagePureClean.png';
+import QRPage from '../assets/images/projectDetail/Pureclean/QR-Page.png';
+import ProfilePage from '../assets/images/projectDetail/Pureclean/ProfilePage.png';
+import RewardPage from '../assets/images/projectDetail/Pureclean/RewardsPage.png';
 
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, } from "lucide-react";
 
@@ -209,7 +212,7 @@ export const projects = [
            <p>The user interface was crafted using a unique combination of <b>Tailwind CSS</b> for bespoke layout styling and <b>Vuetify</b> for robust, pre-built material components. This hybrid approach allowed me to maintain strict design consistency while having the flexibility to build custom features like the interactive 'Loyalty Card' system, which tracks user progress toward a free wash (10-wash milestone).</p>
            <p>During development, I focused heavily on mobile responsiveness and state management to ensure that the 'My QR' and 'Rewards' sections function seamlessly across all devices. This project demonstrates my proficiency in modern Vue frameworks and my ability to translate complex business requirements into a clean, user-centric front-end architecture.</p>`,
     MainImage: MainImagePureClean,
-    images: [PureCleanWebapp],
+    images: [PureCleanWebapp, QRPage, RewardPage, ProfilePage],
     link: "#",
     github: "#",
   },
