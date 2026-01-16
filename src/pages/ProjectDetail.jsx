@@ -103,13 +103,11 @@ const ProjectDetailPage = () => {
  
           <section>
             <h2 className="h4 fw-bold mb-2">Page Info</h2>
-            <div className="mb-4 mt-3">
+            <div className="mb-4 mt-5">
               <h3 className="h5 d-flex align-items-center text-white gap-2">
                 <FaStar className="text-white" /> Landing Page
               </h3>
-              <p className="text-white mt-2" style={{ fontSize: '1.1rem' }}>
-                High-converting and sleek landing page designed for property discovery and lead generation.
-              </p>
+              <p className="text-white mt-3" style={{ fontSize: '1.1rem' }}>High-converting and sleek landing page designed for property discovery and lead generation.</p>
             </div>
 
             {/* Gallery Images */}
