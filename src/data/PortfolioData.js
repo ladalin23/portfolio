@@ -16,10 +16,14 @@ import Dashboard from '../assets/images/projectDetail/Real Estate/Dashboard.png'
 //pos image
 import MainImagePOS from '../assets/images/projectDetail/POS/MainImagePOS.png';
 import DashboardPOS from '../assets/images/projectDetail/POS/Dashboard.png';
+import ProductList from '../assets/images/projectDetail/POS/ProductList.png';
 //library image
 import MainImageLibrary from '../assets/images/projectDetail/Library/MainIMageLibrary.png';
 //libray Image
 import MainImageEBook from '../assets/images/projectDetail/E-Book/MainImageEBook.png';
+//pureclean Image
+import PureCleanWebapp from '../assets/images/projectDetail/Pureclean/HomePage.png';
+import MainImagePureClean from '../assets/images/projectDetail/Pureclean/MainImagePureClean.png';
 
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, } from "lucide-react";
 
@@ -141,7 +145,7 @@ export const projects = [
            <p>I developed this system using the Laravel framework, leveraging its MVC (Model-View-Controller) architecture to ensure the code is organized, scalable, and secure. By utilizing Eloquent ORM, I designed a sophisticated relational database to manage product stocks, categories, and transaction histories. For the interface, I used Blade templating, focusing on creating a clean, responsive layout that allows users to navigate the sales and inventory modules with ease.</p>
            <p>This assignment allowed me to master core backend concepts, such as Middleware for security, Form Validation, and Session Management. I went beyond the basic requirements by implementing an Automated Invoice Generation feature and a centralized Admin Dashboard that tracks daily revenue and low-stock alerts, demonstrating my ability to build a complete business solution from the ground up.</p>`,
     MainImage: MainImagePOS,
-    images: [DashboardPOS],
+    images: [DashboardPOS, ProductList],
     link: "#",
     github: "#",
   },
@@ -190,6 +194,22 @@ export const projects = [
            <p>This project served as a major milestone in my development journey, as it required implementing complex file management systems and secure content delivery. I went beyond basic functionality by building a comprehensive Admin Dashboard to monitor book sales, track user subscriptions, and manage digital inventory. This project demonstrates my ability to handle end-to-end development, from architectural design to the delivery of a user-centric business solution.</p>`,
     MainImage: MainImageEBook,
     images: [],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Pureclean Laundry",
+    nameProject: "Pureclean Laundry",
+    tagPlateform: ["Web App", "Front-end", "UI/UX"],
+    description:
+      "A high-performance front-end web application for laundry services, featuring a digital loyalty program and a mobile-first user dashboard built with Nuxt.js.",
+    image: PureCleanWebapp,
+    tags: ["Nuxt.js", "Vue.js", "Tailwind CSS", "Vuetify", "JavaScript"],
+    desc: `<p>I developed the front-end of the Pureclean Laundry web application, a modern digital solution designed to streamline the customer experience for laundry services. By leveraging <b>Nuxt.js</b>, I built a highly performant and SEO-friendly application that provides a smooth, single-page application (SPA) feel while maintaining excellent load speeds.</p>
+           <p>The user interface was crafted using a unique combination of <b>Tailwind CSS</b> for bespoke layout styling and <b>Vuetify</b> for robust, pre-built material components. This hybrid approach allowed me to maintain strict design consistency while having the flexibility to build custom features like the interactive 'Loyalty Card' system, which tracks user progress toward a free wash (10-wash milestone).</p>
+           <p>During development, I focused heavily on mobile responsiveness and state management to ensure that the 'My QR' and 'Rewards' sections function seamlessly across all devices. This project demonstrates my proficiency in modern Vue frameworks and my ability to translate complex business requirements into a clean, user-centric front-end architecture.</p>`,
+    MainImage: MainImagePureClean,
+    images: [PureCleanWebapp],
     link: "#",
     github: "#",
   },

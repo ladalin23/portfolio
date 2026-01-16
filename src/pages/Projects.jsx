@@ -40,11 +40,12 @@ const ProjectPage = () => {
                 style={{ animationDelay: `${(idx + 1) * 100}ms` }}
               >
                 {/* Image */}
-                <div className="position-relative overflow-hidden  ">
+                <div className="position-relative overflow-hidden d-flex justify-content-center  ">
                     <img
                       src={project.image}
                       alt={project.title}
                       className="img-fluid project-img"
+                      style={{ height: '350px' }}
                     />
                   <div className="overlay-gradient"></div>
 

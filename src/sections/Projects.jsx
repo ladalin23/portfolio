@@ -42,11 +42,12 @@ export const Projects = () => {
             <div className="col-md-6" key={idx}>
               <div className="group glass rounded-3 overflow-hidden fade-in p-3 pt-4" style={{ animationDelay: `${(idx + 1) * 100}ms` }} >
                 {/* Image */}
-                <div className="position-relative overflow-hidden  ">
+                <div className="position-relative overflow-hidden d-flex justify-content-center  ">
                     <img
                       src={project.image}
                       alt={project.title}
                       className="img-fluid project-img"
+                      style={{ height: '350px' }}
                     />
                   <div className="overlay-gradient"></div>
 
@@ -56,7 +57,7 @@ export const Projects = () => {
                 <div className="p-4">
                   <div className="d-flex justify-content-between align-items-start mb-2">
                     <h3 className="h5 fw-semibold project-title">{project.title}</h3>
-                    <FiArrowRight size={20} className="project-arrow"   />
+                    <FiArrowRight size={20} className="project-arrow" onClick={()=> showProjectDetail(project)}  />
                   </div>
                   <p className="text-muted small">{project.description}</p>
                   <div className="d-flex flex-wrap gap-2">
