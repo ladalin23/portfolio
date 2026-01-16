@@ -1,5 +1,5 @@
 import { Button } from "../components/Button";
-import { ArrowRight, ChevronDown, Github, Download, Instagram, Facebook, } from "lucide-react";
+import { ArrowRight, ChevronDown, Github, Download, Linkedin, Facebook, } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton"; 
 import profile_image from '../assets/images/profile-photo.jpg';
 import hero_bg from '../assets/images/hero-bg.jpg';
@@ -8,7 +8,7 @@ export const Hero = () => {
 
   const ConAccont = [
     { Icon: Github, href: "https://github.com/Dalin23Developer" },
-    { Icon: Instagram, href: "https://www.instagram.com/lin2804542025/" },
+    { Icon: Linkedin, href: "https://www.linkedin.com/in/la-dalin-b88829393" },
     { Icon: Facebook, href: "https://web.facebook.com/sok.lin.939283" },
   ] 
 
