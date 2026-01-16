@@ -42,12 +42,11 @@ export const Projects = () => {
             <div className="col-md-6" key={idx}>
               <div className="group glass rounded-3 overflow-hidden fade-in p-3 pt-4" style={{ animationDelay: `${(idx + 1) * 100}ms` }} >
                 {/* Image */}
-                <div className="position-relative overflow-hidden d-flex justify-content-center  ">
+                <div className="position-relative overflow-hidden d-flex justify-content-center ">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="img-fluid project-img"
-                      style={{ height: '350px' }}
+                      className="img-fluid project-img" 
                     />
                   <div className="overlay-gradient"></div>
 

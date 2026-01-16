@@ -44,8 +44,7 @@ const ProjectPage = () => {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="img-fluid project-img"
-                      style={{ height: '360px' }}
+                      className="img-fluid project-img" 
                     />
                   <div className="overlay-gradient"></div>
 
