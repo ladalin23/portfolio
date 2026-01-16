@@ -33,58 +33,6 @@ const ProjectPage = () => {
             focusing on learning, practice, and real-world use.
           </p>
         </div>
-
-        {/* Projects Grid */}
-        <div className="row g-4">
-          {projects.map((project, idx) => (
-            <div className="col-md-6" key={project.id || idx}>
-              <div
-                className="group glass rounded-3 overflow-hidden fade-in p-3 pt-4"
-                style={{ animationDelay: `${(idx + 1) * 100}ms` }}
-              >
-                {/* Image */}
-                <div className="position-relative overflow-hidden d-flex justify-content-center">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="img-fluid project-img"
-                    style={{ objectFit: "cover" }}
-                  />
-                  <div className="overlay-gradient"></div>
-                </div>
-
-                {/* Content */}
-                <div className="p-4">
-                  <div className="d-flex justify-content-between align-items-start mb-2">
-                    <h3 className="h5 fw-semibold project-title">
-                      {project.title}
-                    </h3>
-
-                    <FiArrowRight
-                      size={20}
-                      className="project-arrow cursor-pointer"
-                      onClick={() => showProjectDetail(project)}
-                      role="button"
-                      aria-label="View project details"
-                    />
-                  </div>
-
-                  <p className="text-muted small">
-                    {project.description}
-                  </p>
-
-                  <div className="d-flex flex-wrap gap-2">
-                    {project.tags?.map((tag, tagIdx) => (
-                      <span key={tagIdx} className="badge-custom">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
