@@ -1,9 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { ArrowUpRight, Github } from "lucide-react";
-import { SiLaravel, SiReact, SiMongodb, SiTypescript, SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiMysql } from "react-icons/si";
-import { FaStar } from "react-icons/fa";
-import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import { Row, Col, Card, Button } from 'react-bootstrap';
 import { skillsData } from '../data/PortfolioData';
 
 const SkillPage = () => {

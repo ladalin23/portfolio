@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Badge } from 'react-bootstrap';
 import { FaStar } from "react-icons/fa";
+import { Container, Row, Col, Badge } from 'react-bootstrap'; 
 import { useLocation } from 'react-router-dom';
 import profile from '../assets/images/profile-photo.jpg';
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";

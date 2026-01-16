@@ -1,7 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { ArrowUpRight, Github } from "lucide-react";
-import { FaStar } from "react-icons/fa";
+import { Row, Col, Card } from 'react-bootstrap';
+import { ArrowUpRight } from "lucide-react"; 
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton"; 
 import { skillsData } from '../data/PortfolioData';
 
