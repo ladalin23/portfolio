@@ -36,11 +36,11 @@ export const Navbar = () => {
 
             {/* Mobile Toggle */}
             <button
-                className="navbar-toggler border-0"
+                className={`navbar-toggler text-white border-0 ${isMobileMenuOpen ? "d-none" : ""}`}
                 type="button"
                 onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             >
-                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                <Menu size={24} />
             </button>
 
             {/* Desktop Menu */}
@@ -72,25 +72,31 @@ export const Navbar = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
             <div className="mobile-menu animate-fade">
-            <div className="container py-4 d-flex flex-column gap-3">
-                {navLinks.map((link, index) => (
-                <a
-                    key={index}
-                    href={link.href}
-                    className="mobile-link"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                >
-                    {link.label}
-                </a>
-                ))}
-
                 <button
-                className="btn btn-primary"
-                onClick={() => setIsMobileMenuOpen(false)}
-                >
-                Contact Me
+                    className='navbar-toggler text-end border-0 me-3 mt-2'
+                    type="button"
+                    onClick={() => setIsMobileMenuOpen((prev) => !prev)} >
+                    <X size={24} />
                 </button>
-            </div>
+                <div className="container py-2 d-flex flex-column gap-3">
+                    {navLinks.map((link, index) => (
+                    <a
+                        key={index}
+                        href={link.href}
+                        className="mobile-link"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                        {link.label}
+                    </a>
+                    ))}
+
+                    <button
+                    className="btn btn-primary"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                    Contact Me
+                    </button>
+                </div>
             </div>
         )}
     </header>

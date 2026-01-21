@@ -47,22 +47,32 @@
 
 /* Mobile Menu */
 .mobile-menu {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(14px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0; /* Adjust based on your header height */
+  right: 0;
+  width: 50%;
+  height: calc(100vh - 10px);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(18px);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 10px 10px; 
 }
 
 /* Mobile Links */
 .mobile-link {
-  font-size: 1.1rem;
-  color: #6b7280;
+  font-size: 1.2rem;
+  color: #eee;
   text-decoration: none;
-  padding: 0.5rem 0;
-  transition: color 0.3s ease;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  transition: color 0.3s;
 }
 
 .mobile-link:hover {
-  color: #111827;
+  color: #007bff;
+  background-color: #1a2329;
 }
 
 /* Simple Fade Animation */
@@ -73,7 +83,7 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
