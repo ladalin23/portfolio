@@ -61,7 +61,7 @@ export const Navbar = () => {
             {/* CTA Button (Desktop) */}
             <div className="d-none d-md-block">
                 <Button size="sm">
-                    <a href="#contact" className="text-decoration-none text-white" >
+                    <a href="/contact" className="text-decoration-none text-white" >
                         Contact Me
                     </a>
                 </Button>
